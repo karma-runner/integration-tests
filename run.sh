@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Run the integration tests.
 # Each subdirectory that has a package.json is considered to be an integration test.
