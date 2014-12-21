@@ -1,7 +1,7 @@
 # Some code under test
-plus = (a, b) ->
+window.plus = (a, b) ->
   a + b
 
 # this one is not coveraged
-minus = (a, b) ->
+window.minus = (a, b) ->
   a - b
