@@ -16,5 +16,8 @@
     "karma-coffee-preprocessor": "latest",
     "karma-firefox-launcher": "latest",
     "coffee-script": "latest"
+  },
+  "dependencies": {
+    "ibrik": "^2.0.0"
   }
 }
