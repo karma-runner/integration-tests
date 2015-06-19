@@ -12,7 +12,7 @@
 #
 # -> Run jasmine and jasmine_2 tests using Karma from karma-0.12.1.tgz package.
 
-
+set -e
 
 # Parse arguments.
 GREP=".*"
@@ -39,7 +39,8 @@ for DIR in *; do
 
     cd ./$DIR
     npm install > /dev/null || exit 1
-    npm install ${PKG_TO_OVERRIDE} > /dev/null || exit 1
+    # Ignore peerdependency issues
+    [[ $(npm install ${PKG_TO_OVERRIDE} 2>&1) =~ "EPEERINVALID" ]]
     npm test || exit 1
     cd ..
   fi
