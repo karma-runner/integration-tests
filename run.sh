@@ -40,7 +40,7 @@ for DIR in *; do
     cd ./$DIR
     npm install > /dev/null || exit 1
     # Ignore peerdependency issues
-    [[ $(npm install ${PKG_TO_OVERRIDE} 2>&1) =~ "EPEERINVALID" ]]
+    npm install ${PKG_TO_OVERRIDE} || true
     npm test || exit 1
     cd ..
   fi
