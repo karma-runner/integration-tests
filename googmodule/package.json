@@ -10,9 +10,10 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "jasmine-core": "^2.3.4",
     "karma": "latest",
-    "karma-jasmine": "latest",
     "karma-firefox-launcher": "latest",
-    "karma-googmodule-preprocessor": "latest"
+    "karma-googmodule-preprocessor": "latest",
+    "karma-jasmine": "latest"
   }
 }

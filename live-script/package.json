@@ -10,10 +10,11 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "LiveScript": "latest",
+    "jasmine-core": "^2.3.4",
     "karma": "latest",
-    "karma-jasmine": "latest",
-    "karma-live-preprocessor": "latest",
     "karma-firefox-launcher": "latest",
-    "LiveScript": "latest"
+    "karma-jasmine": "latest",
+    "karma-live-preprocessor": "latest"
   }
 }

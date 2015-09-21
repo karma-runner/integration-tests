@@ -10,12 +10,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "coffee-script": "latest",
+    "jasmine-core": "^2.3.4",
     "karma": "latest",
-    "karma-jasmine": "latest",
-    "karma-coverage": "latest",
     "karma-coffee-preprocessor": "latest",
+    "karma-coverage": "latest",
     "karma-firefox-launcher": "latest",
-    "coffee-script": "latest"
+    "karma-jasmine": "latest"
   },
   "dependencies": {
     "ibrik": "^2.0.0"
