@@ -30,7 +30,7 @@ PKG_TO_OVERRIDE=${@:$OPTIND:1}
 
 # Run all the matching tests.
 for DIR in *; do
-  MATCH_COUNT=$(echo $DIR | egrep -c -e "$GREP")
+  MATCH_COUNT=$(echo $DIR | egrep -c -e "$GREP" || exit 0)
 
   if [ -f "$DIR/package.json" -a $MATCH_COUNT -gt 0 ]; then
     echo "=============================================================="
