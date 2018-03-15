@@ -13,6 +13,6 @@
     "karma": "latest",
     "karma-firefox-launcher": "latest",
     "karma-qunit": "latest",
-    "qunitjs": "^1.19.0"
+    "qunit": "^2.0.0"
   }
 }
