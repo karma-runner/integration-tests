@@ -38,9 +38,9 @@ for DIR in *; do
     echo "=============================================================="
 
     cd ./$DIR
-    npm install > /dev/null || exit 1
+    npm install --no-package-lock > /dev/null || exit 1
     # Ignore peerdependency issues
-    npm install ${PKG_TO_OVERRIDE} || true
+    npm install --no-package-lock ${PKG_TO_OVERRIDE} || true
     npm test || exit 1
     cd ..
   fi

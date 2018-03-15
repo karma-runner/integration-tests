@@ -10,8 +10,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "coffee-script": "latest",
-    "jasmine-core": "^2.3.4",
+    "coffeescript": "latest",
+    "jasmine-core": "^3.1.0",
     "karma": "latest",
     "karma-coffee-preprocessor": "latest",
     "karma-firefox-launcher": "latest",

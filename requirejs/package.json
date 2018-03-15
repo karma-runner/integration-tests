@@ -10,10 +10,11 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "karma": "^0.13.10",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
     "karma-firefox-launcher": "latest",
-    "karma-jasmine": "~0.1.0",
-    "karma-requirejs": "^0.2.1",
+    "karma-jasmine": "~1.1.1",
+    "karma-requirejs": "^1.1.0",
     "requirejs": "^2.1.11"
   }
 }

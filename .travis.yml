@@ -1,3 +1,4 @@
+sudo: false
 language: node_js
 node_js:
   - 4
@@ -7,8 +8,10 @@ node_js:
 
 env:
   global:
-  - SAUCE_USERNAME: vojtajina
-  - secure: "k2x1puIrj42LqnWF8SoDod19xpeJhJN3RDMgRLK2LTYffcdJV8TXilPRUk4pXyN6u8B79fxAW8WucsrlxB6CaaB5cXsFTDG+jpO21AlFc3mFjPh6sTkp/1L/bxc3cJNc9w18Ol2+8MO5s37xuy/lJaQeBRFxQleZZWCLLjtXytg="
+  global:
+  - SAUCE_USERNAME: karmarunnerbot
+  - secure: "bRVY+hYZwMf1SqVnMyZRJTLD0gN1hLx9/MwO8MM/qBiu3YNjXy49XElfMdzMKN6cZeKTmhcnjmZonbJuI1PQ2t+utGkyjnlVLJ/OlWptreKLzIlcbt4hrdPoTcjmUTwDWq9Ex9cVoYX8AzCasETttpczp3P+s3+vmOUj8z25JyU="
+  - CXX=g++-4.8
 
 # Make sure we have new NPM.
 before_install:
@@ -17,6 +20,14 @@ before_install:
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - export $(openssl aes-256-cbc -pass env:CREDENTIALS_PASS -d -in credentials)
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 
 script:
   - ./run.sh karma@latest
