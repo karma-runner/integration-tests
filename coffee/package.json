@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "coffee-script": "latest",
+    "coffeescript": "latest",
     "jasmine-core": "^2.3.4",
     "karma": "latest",
     "karma-coffee-preprocessor": "latest",
