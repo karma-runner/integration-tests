@@ -13,6 +13,6 @@
     "karma": "latest",
     "karma-jasmine": "~0.1.0",
     "karma-firefox-launcher": "latest",
-    "karma-sauce-launcher": "latest"
+    "karma-sauce-launcher": "^1.2.0"
   }
 }
