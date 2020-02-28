@@ -1,4 +1,4 @@
-var TRAVIS_WITHOUT_SAUCE = process.env.TRAVIS_SECURE_ENV_VARS === 'false';
+var TRAVIS_WITH_SAUCE = !!process.env.SAUCE_ACCESS_KEY;
 
 module.exports = function(config) {
   config.set({
@@ -8,7 +8,7 @@ module.exports = function(config) {
       '*.js'
     ],
 
-    browsers: [TRAVIS_WITHOUT_SAUCE ? 'Firefox' : 'sl_chrome_linux'],
+    browsers: [TRAVIS_WITH_SAUCE ? 'sl_chrome_linux' : 'Firefox'],
 
     reporters: ['dots'],
 
