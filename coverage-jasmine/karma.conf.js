@@ -7,7 +7,7 @@ module.exports = function(config) {
       'test/*.js'
     ],
 
-    browsers: ['Firefox'],
+    browsers: ['FirefoxHeadless'],
 
     reporters: ['dots', 'coverage'],
 

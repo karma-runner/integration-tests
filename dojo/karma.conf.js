@@ -10,6 +10,6 @@ module.exports = function(config) {
 
     reporters: ['dots'],
 
-    browsers: ['Firefox']
+    browsers: ['FirefoxHeadless']
   });
 };

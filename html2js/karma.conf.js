@@ -11,7 +11,7 @@ module.exports = function(config) {
       '*.html': ['html2js']
     },
 
-    browsers: ['Firefox'],
+    browsers: ['FirefoxHeadless'],
 
     reporters: ['dots']
   });
