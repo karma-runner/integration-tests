@@ -8,6 +8,6 @@ module.exports = function(config) {
       '*.spec.js'
     ],
     plugins: ['karma-jasmine', 'karma-firefox-launcher', 'karma-googmodule-preprocessor'],
-    browsers: ['Firefox'],
+    browsers: ['FirefoxHeadless'],
   });
 };

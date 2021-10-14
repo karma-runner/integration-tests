@@ -1,4 +1,8 @@
-var TRAVIS_WITH_SAUCE = !!process.env.SAUCE_ACCESS_KEY;
+// When running pre-release tests we want tests to fail if SauceLabs is not
+// configured instead of falling back to the headless browser. That's what
+// KARMA_TEST_NO_FALLBACK variable controls.
+const useSauceLabs = process.env.SAUCE_USERNAME && process.env.SAUCE_ACCESS_KEY
+  || process.env.KARMA_TEST_NO_FALLBACK
 
 module.exports = function(config) {
   config.set({
@@ -8,7 +12,7 @@ module.exports = function(config) {
       '*.js'
     ],
 
-    browsers: [TRAVIS_WITH_SAUCE ? 'sl_chrome_linux' : 'Firefox'],
+    browsers: [useSauceLabs ? 'sl_chrome_linux' : 'FirefoxHeadless'],
 
     reporters: ['dots'],
 

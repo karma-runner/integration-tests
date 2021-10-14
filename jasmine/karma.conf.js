@@ -6,6 +6,6 @@ module.exports = function(config) {
       '*.js'
     ],
 
-    browsers: ['Firefox']
+    browsers: ['FirefoxHeadless']
   });
 };

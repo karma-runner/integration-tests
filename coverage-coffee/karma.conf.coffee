@@ -6,7 +6,7 @@ module.exports = (config) ->
       '*.coffee'
     ]
 
-    browsers: ['Firefox']
+    browsers: ['FirefoxHeadless']
 
     coffeePreprocessor:
       options:
