@@ -12,7 +12,7 @@
 #
 # -> Run jasmine and jasmine_2 tests using Karma from karma-0.12.1.tgz package.
 
-set -e
+set -xve
 
 # Parse arguments.
 GREP=".*"
