@@ -14,6 +14,8 @@
 
 set -xve
 
+echo "staging"
+
 # Parse arguments.
 GREP=".*"
 
