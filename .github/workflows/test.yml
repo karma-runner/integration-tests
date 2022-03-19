@@ -22,22 +22,23 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: bash run.sh
-  windows:
-    name: "Node ${{ matrix.node }} on Windows: Test"
-    runs-on: windows-latest
-    defaults:
-      run:
-        shell: bash
-    strategy:
-      matrix:
-        node:
-          - 10
-          - 12
-          - 14
-          - 16
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-      - run: bash run.sh
+  # TODO(https://github.com/karma-runner/integration-tests/issues/20): uncomment the following.
+  # windows:
+  #   name: "Node ${{ matrix.node }} on Windows: Test"
+  #   runs-on: windows-latest
+  #   defaults:
+  #     run:
+  #       shell: bash
+  #   strategy:
+  #     matrix:
+  #       node:
+  #         - 10
+  #         - 12
+  #         - 14
+  #         - 16
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v3
+  #       with:
+  #         node-version: ${{ matrix.node }}
+  #     - run: bash run.sh
