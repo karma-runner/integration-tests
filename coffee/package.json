@@ -5,7 +5,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start --single-run"
+    "test": "karma start --single-run"
   },
   "author": "",
   "license": "MIT",
