@@ -13,6 +13,6 @@
     "karma": "latest",
     "karma-firefox-launcher": "latest",
     "karma-mocha": "latest",
-    "mocha": "^2.3.3"
+    "mocha": "^10.1.0"
   }
 }
