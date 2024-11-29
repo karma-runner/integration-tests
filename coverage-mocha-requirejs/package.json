@@ -15,7 +15,7 @@
     "karma-firefox-launcher": "latest",
     "karma-mocha": "latest",
     "karma-requirejs": "latest",
-    "mocha": "^2.3.3",
+    "mocha": "^10.1.0",
     "requirejs": "^2.1.20"
   }
 }
